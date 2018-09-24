@@ -1,0 +1,176 @@
+$white: #fff;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ABCDEF;
+}
+
+#header {
+    width: 900px;
+    height: 80px;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+}
+
+#content {
+    width: 900px;
+    height: 550px;
+    background: gray;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#tool {
+    width: 880px;
+    height: 140px;
+    background: #ccc;
+    >li {
+        list-style: none;
+        width: 175px;
+        height: 140px;
+        float: left;
+        border-right: 1px solid $white;
+        text-align: center;
+        margin-bottom: 10px;
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+#image li {
+    width: 100%;
+    list-style: none;
+    margin: 20px auto;
+    overflow: hidden;
+    button:hover {
+        border: 1px solid $white;
+    }
+}
+
+#myform {
+    overflow: hidden;
+    height: 100%;
+}
+
+#tools {
+    width: 150px;
+    height: 60px;
+    margin: 20px auto;
+    list-style: none;
+    li {
+        width: 48px;
+        height: 20px;
+        float: left;
+        margin-bottom: 10px;
+        border: 1px solid;
+        img {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto
+        }
+        &:hover {
+            border: 1px solid $white;
+        }
+    }
+    &:first-child {
+        background: yellow;
+    }
+}
+
+#shape {
+    width: 150px;
+    height: 60px;
+    margin: 20px auto;
+    list-style: none;
+    li {
+        width: 48px;
+        height: 20px;
+        float: left;
+        margin-bottom: 10px;
+        border: 1px solid;
+        img {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto
+        }
+        &:hover {
+            border: 1px solid $white;
+        }
+    }
+}
+
+#size {
+    margin-top: 20px;
+    li {
+        list-style-type: none;
+        &:hover {
+            border: 1px solid orange;
+        }
+        &:first-child {
+            background-color: yellow;
+        }
+    }
+}
+
+#color {
+    width: 146px;
+    height: 60px;
+    margin: 20px auto;
+    overflow: hidden;
+    li {
+        list-style: none;
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-left: 6px;
+        margin-top: 5px;
+        border: 3px solid $white;
+        box-sizing: border-box;
+        &:hover {
+            border-color: deepskyblue !important;
+        }
+    }
+    #red {
+        background: red
+    }
+    #green {
+        background: green
+    }
+    #blue {
+        background: blue
+    }
+    #yellow {
+        background: yellow
+    }
+    #white {
+        background: white
+    }
+    #black {
+        background: black;
+        border: 3px solid crimson;
+    }
+    #pink {
+        background: pink
+    }
+    #purple {
+        background: purple
+    }
+    #cyan {
+        background: cyan
+    }
+    #orange {
+        background: orange
+    }
+}
+
+#canvas {
+    background: white;
+}
